@@ -1,17 +1,18 @@
+
+
 export const Header = () => {
     return(
         <header>
             <div>
-                MyLog
+                João Souza
             </div>
 
             <nav>
-                <ul>
-                    <a>Home</a>
-                    <a>Quem sou</a>
-                    <a>Meus Projetos</a>
-                    <a>Contato</a>
-                </ul>
+                <a href="#">Home</a>
+                <a href="">Quem sou</a>
+                <a href="">Projetos</a>
+                <a href="">Minhas Ferramentas</a>
+                <a href="">Contato</a>
             </nav>
         </header>
     )
