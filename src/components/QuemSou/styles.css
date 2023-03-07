@@ -1,17 +1,7 @@
-.section-apresentation{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.box-text{
-    width: 50%;
-}
-
 .photo{
+    content: "";
+    background-color: gray;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    
-    background-color: rgba(0, 0, 0, 0.815);
 }

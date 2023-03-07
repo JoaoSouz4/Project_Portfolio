@@ -1,11 +1,13 @@
 .section-mystack{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem;
-    margin-top: 2rem;
     background-color: var(--color-background);
+}
+
+.sub-container{
+    display: flex;
 }
 
 .box-text{
@@ -16,16 +18,31 @@
     border-radius: 50%;
     border: 1px solid var(--color-light);
     color: var(--color-light);
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin: 1.5rem;
 }
 
 #arrow-left{
-    position: absolute;
-    left: 0;
+   
 }
 #arrow-rigth{
-    position: absolute;
-    right: 0;
     transform: rotate(180deg);
 }
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.stack-slider{
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    width: 300px;
+}
+
+.stack-description{
+    width: 40%;
+}
+
+

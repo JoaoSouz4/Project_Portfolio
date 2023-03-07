@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './global-styles.css';
 import  'bootstrap/dist/css/bootstrap.min.css' ;
+
 import { Home } from './pages/home';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';

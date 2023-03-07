@@ -12,15 +12,17 @@
   --color-background:  #0B1619;
 }
 
-
-
 body{
   font-family: 'Dosis', sans-serif;
   background-color: var(--color-background);
   color: var(--color-light);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  margin: 0;
 }

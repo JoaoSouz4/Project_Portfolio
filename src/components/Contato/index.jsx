@@ -3,9 +3,12 @@ import './styles.css';
 export const Contato = () => {
     return (
         <section className='section-apresentation'>
-            <div className="box-text">
+
+            <form action="" className='form-to-contact'>
                 <h1>Vamos trabalhar juntos</h1>
-            </div>
+                <input type="email"  placeholder='Digite seu melhor email' id='input-email'/>
+                <textarea name="" id="input-text-area" cols="30" rows="10" placeholder='Mande me uma mensagem...'></textarea>
+            </form>
         </section>
     )
 }
