@@ -15,7 +15,7 @@ export const Home = () => {
                 <div className='left'>
                     <h1>Bem vindo</h1>
                     <p>Convido você a conhecer meus trabalhos e minhas habilidades neste portfólio dedicado a compartilhar meus feitos na programação.  </p>
-                    <button onClick={()=>{console.log(quemSou)}}>Navegar</button>
+                    <button onClick={()=> console.log(quemSou)}>Navegar</button>
                 </div>
                 <div className="img">
                     
