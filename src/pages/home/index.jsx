@@ -5,6 +5,7 @@ import { MinhasStacks } from '../../components/MinhasStacks';
 import { MeusProjetos } from '../../components/MeusProjetos';
 import { Contato } from '../../components/Contato';
 
+
 export const Home = () => {
 
     const quemSou = useRef();
@@ -16,8 +17,8 @@ export const Home = () => {
                     <p>Convido você a conhecer meus trabalhos e minhas habilidades neste portfólio dedicado a compartilhar meus feitos na programação.  </p>
                     <button onClick={()=>{console.log(quemSou)}}>Navegar</button>
                 </div>
-
-                <div className='img'>
+                <div className="img">
+                    
                 </div>
             </section>
 
