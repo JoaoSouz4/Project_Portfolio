@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5000" height="2500" viewBox="0 0 5000 2500">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 499.998px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fafafa;
+        text-anchor: middle;
+        font-family: Dosis;
+      }
+
+      .cls-2, .cls-3 {
+        font-weight: 200;
+      }
+
+      .cls-3 {
+        font-size: 162.499px;
+      }
+    </style>
+  </defs>
+  <text id="JOÃO" class="cls-1" x="473.641" y="888.447"><tspan x="473.641">JOÃO</tspan></text>
+  <text id="SOUZA" class="cls-2" x="2053.885" y="876.96"><tspan x="2053.885">SOUZA</tspan></text>
+  <text id="DEV_FRONT-END" data-name="DEV FRONT-END" class="cls-3" x="1832.785" y="1355.075"><tspan x="1832.785">DEV FRONT-END</tspan></text>
+</svg>

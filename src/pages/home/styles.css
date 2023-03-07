@@ -1,0 +1,37 @@
+.o{
+    background-color: var(--color-dark);
+    height: 500px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--color-dark), rgba(0, 0, 0, 0.905));
+    height: 100vh;
+    color: white;
+}
+
+h1{
+    color: var(--color-primary);
+}
+
+.img{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.494);
+    box-shadow: 1px 1px 3px black;
+    width: 300px;
+    height: 200px;
+}
+
+.left{
+    width: 50%;
+}
+
+.left button{
+    border-radius: 100px;
+    background: none;
+    border: 1px solid var(--color-light);
+    padding: 1rem;
+    color: var(--color-light);
+}

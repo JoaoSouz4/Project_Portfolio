@@ -1,0 +1,17 @@
+.section-myprojects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-background);
+}
+
+.box-text{
+    width: 50%;
+}
+
+.photo{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.815);
+}

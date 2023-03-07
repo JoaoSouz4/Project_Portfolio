@@ -1,0 +1,17 @@
+.section-apresentation{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-text{
+    width: 50%;
+}
+
+.photo{
+    border-radius: 50%;
+    
+    background-color: rgba(0, 0, 0, 0.815);
+}
