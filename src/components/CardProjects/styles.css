@@ -1,9 +1,5 @@
-.img-project{
-    content: "";
-    width: 100%;
-    height: 300px;
-}
 
-.card {
+img{
     width: 300px;
+    border-radius: 10px;
 }

@@ -7,7 +7,7 @@ export const Footer = () => {
            <label>0/00/0000</label>
 
            <div className='my-social-midias'>
-            
+                
            </div>
 
            <div className="my-location">
