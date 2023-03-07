@@ -1,8 +1,22 @@
 footer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: 1fr;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     background-color: var(--color-background);
     color: #fafafa;
+}
+
+.my-social-midias{
+    display: flex;
+    gap: 1rem;
+    margin: 3rem;
+}
+
+.icon-social-media{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }

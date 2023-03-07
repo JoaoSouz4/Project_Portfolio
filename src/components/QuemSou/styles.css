@@ -1,7 +1,9 @@
 .photo{
     content: "";
     background-color: gray;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.596);
 }
