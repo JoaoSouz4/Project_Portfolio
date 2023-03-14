@@ -8,6 +8,7 @@ header {
     color: #ffffff;
     padding: 1.3rem;
     background-color: var(--color-dark);
+    z-index: 10;
 }
 
 nav{
@@ -29,3 +30,93 @@ nav{
     text-decoration: none;
     color: var(--color-light);
 }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 200px;
+}
+.logo-nav{
+    width: 100%;
+}
+
+.icon-menu-mobile{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/*
+    COFIG SIDE BAR MOBILE
+*/
+
+@keyframes open {
+    to{
+        transform: translateX(0); 
+    }
+}
+
+@keyframes close {
+    from {
+        transform: translateX(0); 
+    }
+    to{
+        animation-direction: reverse; 
+    }
+}
+
+.nav-list-mobile{
+    position: fixed;
+    top: 65px;
+    left: 0;
+    background-color: var(--color-dark);
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3rem;
+    transform: translateX(-300px);
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease ease-in-out;
+}
+
+.nav-list-mobile ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-list-mobile a{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+/*
+    BREAKPOINTS: 
+*/
+@media screen and (max-width: 769px){
+
+    .icon-menu-mobile{
+        display: flex;
+        cursor: pointer;
+    }
+
+    header{
+        justify-content: flex-start;
+    }
+    .logo-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .nav-list{
+        display: none;
+    }
+}   

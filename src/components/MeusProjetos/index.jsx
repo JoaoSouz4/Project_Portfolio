@@ -9,24 +9,7 @@ export const MeusProjetos = () => {
     return (
         <section className='section-myprojects'>
             <h1>Meus Projetos</h1>
-            <div className="slider">
-                <CardProjects
-                    title = "Meu Repositório Criativo"
-                    img = {logo_RC}
-                />
-                <CardProjects
-                    title = "Clima Agora"
-                    img = {logo_CA}
-                />
-                <CardProjects
-                    title = "Templo dos Conselhos"
-                    img = {logo_TC}
-                />
-                <CardProjects
-                    title = "Gerador de Senhas"
-                    img = {logo_GS}
-                />
-            </div>
+          
         </section>
     )
 }
