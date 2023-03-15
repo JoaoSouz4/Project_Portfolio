@@ -4,6 +4,7 @@ import { QuemSou } from '../../components/QuemSou';
 import { MinhasStacks } from '../../components/MinhasStacks';
 import { MeusProjetos } from '../../components/MeusProjetos';
 import { Contato } from '../../components/Contato';
+import { LogoComponent } from '../../components/LogoComponent';
 
 
 export const Home = () => {
@@ -12,13 +13,13 @@ export const Home = () => {
     return(
         <main>
             <section className="banner">
-                <div className='left'>
+                <div className='welcome'>
                     <h1>Bem vindo</h1>
                     <p>Convido você a conhecer meus trabalhos e minhas habilidades neste portfólio dedicado a compartilhar meus feitos na programação.  </p>
-                    <button onClick={()=> console.log(quemSou)}>Navegar</button>
+                    <button>Navegar</button>
                 </div>
-                <div className="img">
-                    
+                <div className="logo-banner">
+                    <LogoComponent sizeLogo = "2.3rem" sizeSlogan = "1.2rem"/>
                 </div>
             </section>
 

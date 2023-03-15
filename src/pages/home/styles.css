@@ -12,23 +12,23 @@
 h1{
     color: var(--color-primary);
 }
-
-.img{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.494);
-    box-shadow: 1px 1px 3px black;
-    width: 300px;
-    height: 200px;
+.logo-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.left{
-    width: 50%;
+.welcome{
+   width: 45%;
 }
 
-.left button{
+.welcome button{
     border-radius: 100px;
+    width: 200px;
+    margin-top: 0.8rem;
     background: none;
     border: 1px solid var(--color-light);
-    padding: 1rem;
+    padding: 0.3rem;
     color: var(--color-light);
+    font-weight: 500;
 }

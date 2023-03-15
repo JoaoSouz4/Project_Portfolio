@@ -3,11 +3,12 @@ import './styles.css';
 import { BiMenu } from 'react-icons/bi'
 import { useRef, useState } from 'react';
 import { AiFillHome, AiOutlineFundProjectionScreen } from 'react-icons/ai'
-import { FcAbout } from 'react-icons/fc';
 import { BsStack } from 'react-icons/bs';
 import { SiAboutdotme } from 'react-icons/si'
 import { RiContactsLine } from 'react-icons/ri'
 import { MdNavigateBefore } from 'react-icons/md'
+
+import { LogoComponent } from '../LogoComponent';
 
 
 export const Header = () => {
@@ -37,7 +38,7 @@ export const Header = () => {
             {menu && <MdNavigateBefore onClick={handleClick}/>}
             {!menu && <BiMenu onClick={handleClick}/>}
          </div>
-          João Souza
+          <LogoComponent sizeLogo = "1rem" sizeSlogan = "0.7rem"/>
         </div>
 
         <nav className='nav-list'>

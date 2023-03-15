@@ -9,6 +9,10 @@ footer{
     color: #fafafa;
 }
 
+.credits{
+    margin-top: 2.6rem;
+}
+
 .my-social-midias{
     display: flex;
     gap: 1rem;

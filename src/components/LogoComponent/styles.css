@@ -1,0 +1,17 @@
+.logo-component-container{
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo{
+    padding-top: 0.1rem;
+    font-weight: lighter;
+}
+
+.slogan-logo{
+    margin-top: -0.3rem;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: lighter;
+}

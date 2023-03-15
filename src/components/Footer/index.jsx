@@ -1,11 +1,12 @@
 import './styles.css';
 import { AiOutlineInstagram, AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { LogoComponent } from '../LogoComponent';
 
 export const Footer = () => {
     return(
         <footer>
-
-           <label>Desenvolvido por João Souza</label>
+           <LogoComponent sizeLogo = "2.3rem" sizeSlogan = "1.2rem"/>
+           <label className='credits'>Desenvolvido por João Souza</label>
            <label>0/03/2023</label>
 
            <div className='my-social-midias'>
