@@ -11,6 +11,53 @@ import { useRef, useState } from 'react';
 export const MinhasStacks = () => {
 
    const slide = useRef();
+   const descArray = [
+    {
+        title: 'React Js',
+        l1: 'Gerenciamento de estado',
+        l2: 'Funções Hooks',
+        l3: 'Criação de componentes funcionais/classe',
+        l4: 'Implementação de libs externas'
+    },
+    {
+        title: 'Node Js',
+        l1: 'Criação de API REST com express',
+        l2: 'Implementação de Módulos NPM',
+        l3: 'Uso da arquitetura MVC',
+        l4: 'Conecção com MongoDB',
+    },
+    {
+        title: 'JavaScript',
+        l1: 'Estrutura de Dados',
+        l2: 'Orientação a Objeto',
+        l3: 'Manipulação da DOM',
+        l4: 'Consumo de API' 
+    },
+    {
+        title: 'HTML5',
+        l1: 'Elaboração de formulários',
+        l2: 'Foco em construção do HTML semântica',
+        l3: 'Estruturação de páginas web',
+        l4: 'inserção de arquivos de mídia',
+    },
+    {
+        title: 'CSS3',
+        l1: 'Flex Box/ Grid Css',
+        l2: 'Responsividade com media queries',
+        l3: 'Pseudo-classes',
+        l4: 'Animações com KeyFrames',
+    },
+
+    {
+        title: 'MongoDB',
+        l1: 'Criação de Banco de dados local/Nuvem',
+        l2: 'implentação do CRUD em aplicação',
+        l3: 'Embedded Documents',
+        l4: 'Mongoose com Node',
+    },
+
+   ]
+   const [ descStack, setDeskStack ] = useState(0);
     return (
         <>
         <section className='section-mystack'>
@@ -26,10 +73,10 @@ export const MinhasStacks = () => {
                      pagination = {true}
                      spaceBetween={50}
                      slidesPerView={1}
-                     onSlideChange={() => console.log('oi')}
+                     onSlideChange={() => {setDeskStack(slide.current.swiper.activeIndex)}}
                        
                   >
-                    <SwiperSlide className = "react">
+                    <SwiperSlide className = "react" >
                         <DiReact className='icon-stack'/>
 
                     </SwiperSlide>
@@ -55,10 +102,14 @@ export const MinhasStacks = () => {
                   </Swiper>
                 </div>
                 <div className='stack-description'>
-                    <h4>Title Stack</h4>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quisquam asperiores, perferendis ad laboriosam officia vitae. Eveniet neque recusandae ea nisi alias quis, natus quisquam hic ipsum nam quod reiciendis!</span>
+                    <h4>{descArray[descStack].title}</h4>
+                    <ul>
+                        <li>{descArray[descStack].l1}</li>
+                        <li>{descArray[descStack].l2}</li>
+                        <li>{descArray[descStack].l3}</li>
+                        <li>{descArray[descStack].l4}</li>
+                    </ul>
                 </div>
-                {console.log(slide)}
             </div>
         </section>
         </>

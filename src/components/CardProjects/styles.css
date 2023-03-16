@@ -1,5 +1,28 @@
+.card-project{
+    padding: 1rem;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.card-project  p{
+    color: #fafafa;
+}
+
+.card-project-button{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fafafa;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
 
 .img-stack{
-    width: 300px;
+    object-fit: center;
+    width: 100%;
+    padding-bottom: 1rem;
     border-radius: 10px;
+    border-radius: 50%;
 }

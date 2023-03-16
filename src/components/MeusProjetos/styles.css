@@ -8,7 +8,46 @@
     padding-bottom: 100px;
 }
 
-.slider{
+.section-myprojects h1{
+    margin: 0;
+}
+
+.container-slider-projects{
+    width: 100%;
+}
+.swiper-projects{
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CONFIG SWIPPER*/
+.swiper-button-prev{
+    color: #fafafa;
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    border-radius: 50%;
+    padding: 1.8rem;
+}
+
+.swiper-button-prev::after{
+    font-size: 1.4rem;
+}
+
+.swiper-button-next{
+    color: #fafafa;
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    border-radius: 50%;
+    padding: 1.8rem;
+}
+
+.swiper-button-next::after{
+    font-size: 1.4rem;
 }
