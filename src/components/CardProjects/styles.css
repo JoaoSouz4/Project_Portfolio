@@ -1,6 +1,6 @@
 .card-project{
     padding: 1rem;
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
     text-align: center;
@@ -8,6 +8,9 @@
 
 .card-project  p{
     color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
 }
 
 .card-project-button{
@@ -18,11 +21,9 @@
     border-radius: 10px;
     padding: 0.5rem;
 }
-
+  
 .img-stack{
     object-fit: center;
-    width: 100%;
-    padding-bottom: 1rem;
-    border-radius: 10px;
     border-radius: 50%;
+    width: 100%;
 }

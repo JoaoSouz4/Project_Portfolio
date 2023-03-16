@@ -3,7 +3,7 @@ import './styles.css';
 export const QuemSou = () => {
 
     return (
-        <section className='section-apresentation'>
+        <section className='section-apresentation' id = 'quem-sou'>
             <div className="box-text">
                 <h1>Quem Sou?</h1>
                 <p>

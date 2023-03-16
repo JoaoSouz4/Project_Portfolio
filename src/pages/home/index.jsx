@@ -5,12 +5,13 @@ import { MinhasStacks } from '../../components/MinhasStacks';
 import { MeusProjetos } from '../../components/MeusProjetos';
 import { Contato } from '../../components/Contato';
 import { LogoComponent } from '../../components/LogoComponent';
-
+import { Header } from '../../components/Header';
 
 export const Home = () => {
 
-    const quemSou = useRef();
     return(
+        <>
+        <Header ></Header>
         <main>
             <section className="banner">
                 <div className='welcome'>
@@ -23,10 +24,11 @@ export const Home = () => {
                 </div>
             </section>
 
-            <QuemSou ref = {quemSou}></QuemSou>
+            <QuemSou></QuemSou>
             <MinhasStacks></MinhasStacks>
             <MeusProjetos></MeusProjetos>
             <Contato></Contato>
         </main>
+        </>
     )
 }

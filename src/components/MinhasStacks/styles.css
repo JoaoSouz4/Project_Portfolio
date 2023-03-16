@@ -31,15 +31,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 300px;
 }
 
 .stack-description h4{
     color: var(--color-primary);
 }
 
-.stack-description{
-    width: 50%;
+.list-desc{
+    width: 100%;
     color: var(--color-light);
 }
 .icon-stack{

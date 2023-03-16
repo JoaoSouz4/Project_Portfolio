@@ -11,7 +11,7 @@ import { MdNavigateBefore } from 'react-icons/md'
 import { LogoComponent } from '../LogoComponent';
 
 
-export const Header = () => {
+export const Header = (props) => {
 
    const [menu, setMenu] = useState(false);
    const mobileNav = useRef();
@@ -29,7 +29,11 @@ export const Header = () => {
          
          return
       }
+   }
 
+   const handleClose = () => {
+      mobileNav.current.style.animationName = "close"
+      setMenu(false);
    }
     return(
      <header>
@@ -44,36 +48,36 @@ export const Header = () => {
         <nav className='nav-list'>
             <ul>
                <a href="#" className = "current-page">Home</a>
-               <a href="#">Quem sou</a>
-               <a href="#">Stacks</a>
-               <a href="#">Meus projetos</a>
-               <a href="#">Contato</a>
+               <a href="#quem-sou">Quem sou</a>
+               <a href="#minhas-stacks">Stacks</a>
+               <a href="#meus-projetos">Meus projetos</a>
+               <a href="#contato">Contato</a>
             </ul>
         </nav>
 
         <nav className="nav-list-mobile" ref = {mobileNav}>
                <ul>
-                  <a href="#">
+                  <a href="#" onClick={handleClose}>
                      <AiFillHome className='icon-nav'/>
                      Home
                   </a>
 
-                  <a href="#">
+                  <a href="#quem-sou" onClick={handleClose}>
                      <SiAboutdotme className='icon-nav'/>
                      Quem sou
                   </a>
 
-                  <a href="#">
+                  <a href="#minhas-stacks" onClick={handleClose}>
                      <BsStack className='icon-nav' />
                      Stacks
                   </a>
 
-                  <a href="#">
+                  <a href="#meus-projetos" onClick={handleClose}>
                      <AiOutlineFundProjectionScreen className='icon-nav'/>
                      Meus projetos
                   </a>
 
-                  <a href="#">
+                  <a href="#contato" onClick={handleClose}>
                      <RiContactsLine className='icon-nav'/>
                      Contato
                   </a>

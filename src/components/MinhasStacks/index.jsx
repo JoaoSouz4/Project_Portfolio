@@ -60,7 +60,7 @@ export const MinhasStacks = () => {
    const [ descStack, setDeskStack ] = useState(0);
     return (
         <>
-        <section className='section-mystack'>
+        <section className='section-mystack' id = "minhas-stacks">
 
             <h1>Minhas Stacks</h1>
 
@@ -103,7 +103,7 @@ export const MinhasStacks = () => {
                 </div>
                 <div className='stack-description'>
                     <h4>{descArray[descStack].title}</h4>
-                    <ul>
+                    <ul className = 'list-desc'>
                         <li>{descArray[descStack].l1}</li>
                         <li>{descArray[descStack].l2}</li>
                         <li>{descArray[descStack].l3}</li>

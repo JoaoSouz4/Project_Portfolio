@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 
 export const MeusProjetos = () => {
     return (
-        <section className='section-myprojects'>
+        <section className='section-myprojects' id='meus-projetos'> 
             <h1>Meus Projetos</h1>
           <div className="container-slider-projects">
                 <Swiper
