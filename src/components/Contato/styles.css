@@ -37,3 +37,8 @@ textarea:focus, input:focus {
     height: 3rem;
     padding: 0.5rem;
 }
+
+#input-name{
+    height: 3rem;
+    padding: 0.5rem;
+}
