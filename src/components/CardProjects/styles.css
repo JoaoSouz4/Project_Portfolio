@@ -1,6 +1,5 @@
 .card-project{
-    padding: 1rem;
-    width: 250px;
+    max-width: 500px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
     text-align: center;
@@ -21,9 +20,36 @@
     border-radius: 10px;
     padding: 0.5rem;
 }
+
+.card-project p{
+    font-size: 1.2rem;
+}
+
+.card-project-button a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.card-project-button:hover{
+    transition: 0.4s ease;
+    background-color: var(--color-primary);
+}
   
 .img-stack{
     object-fit: center;
     border-radius: 50%;
-    width: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+.btn-acess{
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .img-stack{
+       width: 200px;
+       height: 200px;
+    }
 }

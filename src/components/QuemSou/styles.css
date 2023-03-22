@@ -1,9 +1,37 @@
-.photo{
-    content: "";
-    background-color: gray;
-    width: 300px;
-    height: 300px;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 30%;
-    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.596);
+.my-photo{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-radius: 1px 1px 5px rgba(0, 0, 0, 0.722);
+}
+
+.section-apresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-text{
+    width: 50%;
+    max-width: 700px;
+}
+
+@media screen and (max-width: 943px){
+    .box-text{
+        width: 100%;
+    }
+    .section-apresentation{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    .my-photo{
+        width: 200px;
+        height:200px;
+    }
 }
