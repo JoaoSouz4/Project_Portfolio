@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
+    width: 600px;
 }
 
 .stack-description h4{
@@ -47,11 +47,11 @@
     flex-direction: column;
     justify-content: center;
     width: 500px;
-    height: 100%;
+    height: 300px;
 }
 
 .stack-description ul li{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .list-desc{
@@ -75,7 +75,11 @@
     color: white;
 }
 
-@media screen and (max-width: 1024px){
+.title-section{
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1124px){
     .sub-container{
         flex-direction: column;
         justify-content: flex-start;
@@ -99,7 +103,13 @@
 
    .sliders-with-stacks{
     width: 100%;
-   }
+   } 
+   .stack-description ul li{
+    font-size: 1.2rem;
+    }
+    .stack-item{
+        width: 100%;
+    }
 }
 
 

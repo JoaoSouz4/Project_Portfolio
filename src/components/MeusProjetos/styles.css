@@ -9,6 +9,10 @@
 }
 
 .section-myprojects h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin: 0;
 }
 
@@ -40,15 +44,24 @@
 .swiper-button-prev{
     color: #fafafa;
     background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 3rem;
+    height: 3rem;
 }
 
 .swiper-button-prev::after{
     font-size: 1rem;
+    text-align: center;
 }
 
 .swiper-button-next{
     color: #fafafa;
     background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 3rem;
+    height: 3rem;
 }
 
 .swiper-button-next::after{
@@ -61,7 +74,7 @@
     }
 
     .container-slider-projects{
-        width: 95%;
+        width: 100%;
     }
 
     .swiper-projects{

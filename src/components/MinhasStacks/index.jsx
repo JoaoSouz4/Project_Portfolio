@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useRef, useState } from 'react';
 import { descArray } from '../../utils/descArray';
+import { Fade } from 'react-awesome-reveal';
 
 export const MinhasStacks = () => {
 
@@ -16,11 +17,12 @@ export const MinhasStacks = () => {
 
     return (
             <section className='section-mystack' id = "minhas-stacks">
-                <h1><BsStack/>Minhas Stacks</h1>
+                <h1 className = "title-section"><BsStack/>Minhas Stacks</h1>
 
                 <div className="sub-container">
                     <div className="sliders-with-stacks">
                         <Swiper
+                            className = 'swiper-stack'
                             ref={slide}
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
                             navigation = {true}
@@ -29,27 +31,27 @@ export const MinhasStacks = () => {
                             slidesPerView={1}
                             onSlideChange={() => {setDeskStack(slide.current.swiper.activeIndex)}}
                         >
-                        <SwiperSlide className = "react" >
+                        <SwiperSlide className = "stack-item" >
                             <DiReact className='icon-stack'/>
                         </SwiperSlide>
 
-                        <SwiperSlide className='node'>
+                        <SwiperSlide className='stackitem'>
                             <DiNodejsSmall className='icon-stack'/>
                         </SwiperSlide>
 
-                        <SwiperSlide className ='js'>
+                        <SwiperSlide className ='stack-item'>
                             <DiJavascript1 className='icon-stack'/>
                         </SwiperSlide>
 
-                        <SwiperSlide className='html'>
+                        <SwiperSlide className='stack-item'>
                             <DiHtml5 className='icon-stack'/>
                         </SwiperSlide>
 
-                        <SwiperSlide className ='css'>
+                        <SwiperSlide className ='stack-item'>
                             <DiCss3 className='icon-stack'/>
                         </SwiperSlide>
 
-                        <SwiperSlide className='mongo'>
+                        <SwiperSlide className='stack-item'>
                             <DiMongodb className='icon-stack'/>
                         </SwiperSlide>
                         </Swiper>
@@ -62,7 +64,7 @@ export const MinhasStacks = () => {
                                 })}
                             </ul>
                         </div>
-                     </div>
+                </div>
             </section>
     )
 }

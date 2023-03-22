@@ -28,7 +28,6 @@ export const Home = () => {
                 </Fade>
             </section>
 
-            
             <QuemSou></QuemSou>
             <MinhasStacks></MinhasStacks>
             <MeusProjetos></MeusProjetos>

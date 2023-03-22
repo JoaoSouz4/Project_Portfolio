@@ -47,7 +47,7 @@ export const Header = (props) => {
 
         <nav className='nav-list'>
             <ul>
-               <a href="#" className = "current-page">Home</a>
+               <a href="#" >Home</a>
                <a href="#quem-sou">Quem sou</a>
                <a href="#minhas-stacks">Stacks</a>
                <a href="#meus-projetos">Meus projetos</a>
