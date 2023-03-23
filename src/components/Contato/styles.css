@@ -76,16 +76,53 @@ textarea:focus, input:focus {
     padding: 1.4rem;
     position: fixed;
     bottom: 1rem;
-    right: 1rem;
     animation-duration: 0.3s;
     z-index: 100;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.753);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.719);
+}
+
+.sucess-msg{
+    text-align: center;
+    color: #fafafa;
+    background-color: var(--color-background);
+    position: fixed;
+    top: 10rem;
+    height: 50vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 200;
+    width: 90%;
+    box-shadow: 0px 0px 10000px rgba(0, 0, 0, 0.724);
+    outline: 1px solid #fafafa;
+    max-width: 900px;
+}
+
+.sucess-msg h3{
+    color: var(--color-primary);
+}
+
+
+.sucess-msg button{
+
+    background-color: transparent;
+    padding: 1rem;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+}
+
+.sucess-msg p{
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1024px){
     .erro-msg {
         justify-content: center;
-       
+        width: 90%;
     }
 }
 @media screen and (max-width: 880px){

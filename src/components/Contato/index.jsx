@@ -1,6 +1,7 @@
 import './styles.css';
 import { FiAlertCircle } from 'react-icons/fi'
-import { useState, useRef } from 'react'
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const Contato = () => {
     const [nameUser, setNameUser] = useState("");
@@ -8,6 +9,7 @@ export const Contato = () => {
     const [bodyEmail, setBodyEmail] = useState("");
 
     const erroMsg = useRef();
+    const sucessMsg = useRef();
 
     function sendEmail(e){
         e.preventDefault();
@@ -17,8 +19,21 @@ export const Contato = () => {
             setTimeout(()=>{
                 erroMsg.current.style.animationName = "end";
                 erroMsg.current.style.display = "none"; 
-            }, 1500)
+            }, 1500);
+            return;
         }
+        const templateParms = {
+            from_name: nameUser,
+            message: bodyEmail,
+            email: email
+        }
+        emailjs.send("service_mo7xqg2", "template_8ou0i8e", templateParms, "xBipNAtv2aDq2yX9p")
+        .then((resp)=>{
+            sucessMsg.current.style.display = "flex";
+            setBodyEmail("");
+            setEmail("");
+            setNameUser("");
+        });
     }
 
     return (
@@ -27,6 +42,12 @@ export const Contato = () => {
         <div className = "erro-msg" ref = {erroMsg}>
             <FiAlertCircle/>
             Por favor, preencha todos os campos para continuar.
+        </div>
+
+        <div className="sucess-msg" ref = {sucessMsg}>
+            <h3>Obrigado pela iniciativa!</h3>
+            <p>Irei entrar em contato o mais rápido possível! Aproveite para conhecer mais meus projetos aqui no site.</p>
+            <button onClick = {()=> sucessMsg.current.style.display = "none"}>Fechar</button>
         </div>
             
                 <form className='form-to-contact'
