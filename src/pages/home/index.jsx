@@ -20,7 +20,7 @@ export const Home = () => {
                     <div className='welcome'>
                         <h1>Bem vindo!</h1>
                         <p>Convido você a conhecer meus trabalhos e minhas habilidades neste portfólio dedicado a compartilhar meus feitos na programação.  </p>
-                        <button>Navegar</button>
+                        <button><a href="#quem-sou">Navegar</a></button>
                     </div>
                     <div className="logo-banner">
                         <LogoComponent sizeLogo = "3.4rem" sizeSlogan = "2.3rem"/>

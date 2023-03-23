@@ -30,6 +30,15 @@ h1{
     font-weight: 500;
 }
 
+.welcome button a{
+    text-decoration: none;
+    color: var(--color-light); 
+}
+
+.welcome button a:active{
+    color: var(--color-light); 
+}
+
 @media screen  and (max-width: 900px){
  
     .banner{

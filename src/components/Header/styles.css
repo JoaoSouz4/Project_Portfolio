@@ -31,6 +31,9 @@ nav{
     text-decoration: none;
     color: var(--color-light);
 }
+.nav-list ul a:hover{
+    color: var(--color-primary);
+}
 
 .current-page{
     border-bottom: 2px solid var(--color-primary);

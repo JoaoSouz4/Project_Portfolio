@@ -7,7 +7,7 @@ export const Footer = () => {
         <footer>
            <LogoComponent sizeLogo = "2.3rem" sizeSlogan = "1.2rem"/>
            <label className='credits'>Desenvolvido por João Souza</label>
-           <label>0/03/2023</label>
+           <label>Março de 2023</label>
 
            <div className='my-social-midias'>
                 <AiFillGithub className='icon-social-media'></AiFillGithub>
