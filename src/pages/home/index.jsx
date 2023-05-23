@@ -6,12 +6,10 @@ import { MeusProjetos } from '../../components/MeusProjetos';
 import { Contato } from '../../components/Contato';
 import { LogoComponent } from '../../components/LogoComponent';
 import { Header } from '../../components/Header';
-import { Fade } from 'react-awesome-reveal'
-
-
+import { Fade } from 'react-awesome-reveal';
 export const Home = () => {
-
     return(
+        
         <>
         <Header ></Header>
         <main>
@@ -20,7 +18,9 @@ export const Home = () => {
                     <div className='welcome'>
                         <h1>Bem vindo!</h1>
                         <p>Convido você a conhecer meus trabalhos e minhas habilidades neste portfólio dedicado a compartilhar meus feitos na programação.  </p>
-                        <button><a href="#quem-sou">Navegar</a></button>
+                        <button>
+                            <a href='https://drive.google.com/file/d/1oeE46PmXxgWJwIFtSB1avKML7T6o2MwK/view?usp=share_link' target = '_blank'>Baixar CV</a>
+                        </button>
                     </div>
                     <div className="logo-banner">
                         <LogoComponent sizeLogo = "3.4rem" sizeSlogan = "2.3rem"/>
